@@ -1,11 +1,21 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
     "strict": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@atom": ["./atom/*"],
+      "@colors": ["./desingsystem/*"],
+      "@contexts": ["./contexts/*"],
+      "@hooks": ["./hooks/*"],
+      "@metrics": ["./utils/*"],
+      "@molecules": ["./molecules/*"],
+      "@organisms": ["./organisms/*"],
+      "@texts": ["./desingsystem/*"],
+      "@typings": ["./typings/*"],
     }
   },
   "include": [
